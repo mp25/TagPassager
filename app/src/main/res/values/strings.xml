@@ -1,0 +1,23 @@
+<resources>
+
+    <string-array name="turno_array">
+        <item>Matutino</item>
+        <item>Vespertino</item>
+        <item>Noturno</item>
+    </string-array>
+    <string name="app_name">TAG PASSENGER</string>
+    <string name="lblNome">Nome</string>
+    <string name="lblTag">Tag</string>
+    <string name="txtBoxNome">Nome</string>
+    <string name="txtBoxTag">Tag</string>
+    <string name="Message">Conexão realizada com sucesso</string>
+    <string name="novo">Novo</string>
+    <string name="viagem">Viagens</string>
+    <string name="title_activity_act_tela_inicial">Tag Passenger</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

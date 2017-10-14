@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linhaRecycleView">
+
+    <TextView
+        android:text="Marcelo Pimentel Silva"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtNome"
+        android:paddingLeft="16dp"
+        android:textStyle="normal|bold"
+        android:layout_height="20dp"
+        android:paddingRight="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/txtTAG"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="0125520"
+        android:layout_width="94dp"
+        android:layout_height="16dp"
+        android:id="@+id/txtTAG"
+        android:paddingLeft="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp" />
+
+</android.support.constraint.ConstraintLayout>

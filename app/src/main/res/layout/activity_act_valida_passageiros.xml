@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_act_valida_passageiros"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.marcelop.tagpassenger.activities.ActValidaPassageiros">
+
+    <Button
+        android:text="Validar Passageiros"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        android:id="@+id/fabValidaLst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/lstValidaPassageiros" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtValidaTag"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:id="@+id/btnAdd"
+        app:layout_constraintBottom_toTopOf="@+id/lstValidaPassageiros"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtValidaTag"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="283dp"
+        android:id="@+id/lstValidaPassageiros"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtValidaTag" />
+
+</android.support.constraint.ConstraintLayout>

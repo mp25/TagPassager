@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_chamada"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Chamada" />
+        <item
+            android:id="@+id/view_validar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Validar Chamada" />
+        <item
+            android:id="@+id/view_cadastro"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Novo Passageiro" />
+
+    </group>
+
+    <item android:title="Viagens">
+        <menu>
+            <item
+                android:id="@+id/view_viagem_ida"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Viagens de Ida" />
+            <item
+                android:id="@+id/view_viagem_volta"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Viagens de Volta" />
+        </menu>
+    </item>
+
+</menu>
