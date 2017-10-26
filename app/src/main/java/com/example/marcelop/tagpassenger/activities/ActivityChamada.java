@@ -1,6 +1,5 @@
 package com.example.marcelop.tagpassenger.activities;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,7 +16,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.marcelop.tagpassenger.R;
-import com.example.marcelop.tagpassenger.components.PassageiroAdapter;
 import com.example.marcelop.tagpassenger.dao.PassageiroDAO;
 import com.example.marcelop.tagpassenger.dao.TurnoViagemDAO;
 import com.example.marcelop.tagpassenger.dao.ViagemDAO;

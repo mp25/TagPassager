@@ -1,6 +1,7 @@
 package com.example.marcelop.tagpassenger.activities;
 
 import android.app.DialogFragment;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class ActTelaInicio extends AppCompatActivity implements SelecionaTurnoDi
     Button btnListaViagemIda;
     Button btnListaViagemVolta;
     Intent intent;
+    BluetoothAdapter bluetoothAdapter;
 
 
     @Override
@@ -29,7 +31,14 @@ public class ActTelaInicio extends AppCompatActivity implements SelecionaTurnoDi
         btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
         btnListaViagemIda = (Button) findViewById(R.id.btnListaViagemIda);
         btnListaViagemVolta = (Button) findViewById(R.id.btnListaViagemVolta);
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
+        if(bluetoothAdapter == null){
+
+        }else{
+            Intent enableBlueTooth= new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableBlueTooth,1);
+        }
 
         btnChamada.setOnClickListener(new View.OnClickListener() {
             @Override
